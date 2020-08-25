@@ -1,0 +1,1 @@
+GO learner program to take input of decimal or binary numbers and will convert it the other. 
