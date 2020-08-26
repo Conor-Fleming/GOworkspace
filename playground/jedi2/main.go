@@ -38,4 +38,5 @@ func main() {
 	fmt.Println(lit)
 
 	fmt.Println(a, a2, a3, a4)
+
 }
