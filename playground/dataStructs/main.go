@@ -1,12 +1,20 @@
 package main
 
 func main() {
-	//array.go
-	//array()
+	//array.go  //ARRAY STUFF
+	array()
 
-	//slice.go
-	//slice()
-	//sliceRng()
-	//slicing()
-	//appndSlice()
+	//slice.go  //SLICE STUFF
+	slice()
+	sliceRng()
+	slicing()
+	appndSlice()
+	deletFromSlice()
+	multiDemSlice()
+
+	//map.go   //MAP STUFF
+	introMap()
+	addMapVal()
+	mapRange()
+	mapDelete()
 }

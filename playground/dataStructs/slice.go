@@ -32,5 +32,17 @@ func appndSlice() {
 	tester := []int{20, 25, 30} // declaring new slice to append onto x
 	x = append(x, tester...)    //appending tester slice to x
 	fmt.Println(x)
+}
 
+func deletFromSlice() {
+	x := append(x[:2], x[6:]...) // will remove the values after index 2 until the specified index, in this case 6
+	fmt.Println(x)
+} // the resulting x slice does not contain the values that were at indexes 2-5
+
+func multiDemSlice() {
+	s1 := []string{"conor", "jordan", "ciara", "cormac", "bert"} //create two string slices
+	s2 := []string{"kyle", "aaron", "haydo"}
+
+	combiled := [][]string{s1, s2} // two dem slice --> slice of string slices
+	fmt.Println(combiled)
 }
