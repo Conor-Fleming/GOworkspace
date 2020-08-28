@@ -2,7 +2,7 @@ package main
 
 func main() {
 	//array.go  //ARRAY STUFF
-	array()
+	/*array()
 
 	//slice.go  //SLICE STUFF
 	slice()
@@ -16,5 +16,9 @@ func main() {
 	introMap()
 	addMapVal()
 	mapRange()
-	mapDelete()
+	mapDelete()*/
+
+	//struct.go  //STRUCT STUFF
+	structInit()
+	embedStruct()
 }
