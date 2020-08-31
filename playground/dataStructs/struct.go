@@ -45,5 +45,18 @@ func embedStruct() { //embedding structs *POLYMORPHISM* *INHERITENCE*
 	fmt.Println(sa1.person)
 	fmt.Println(sa1.age)
 	fmt.Println(sa1.person.age) //same as above, dont need to specify parent class unless there is a naming clash
+}
 
+func anonStruct() { //showing use of an anonymous struct
+	//can be used to minimize code pollution, avoiding declaring a struct variable for use in one spot for instance
+	anon := struct {
+		first string
+		last  string
+		age   int
+	}{
+		first: "anonymous",
+		last:  "struct",
+		age:   0,
+	}
+	fmt.Println(anon)
 }

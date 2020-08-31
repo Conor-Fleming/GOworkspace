@@ -21,4 +21,5 @@ func main() {
 	//struct.go  //STRUCT STUFF
 	structInit()
 	embedStruct()
+	anonStruct()
 }
