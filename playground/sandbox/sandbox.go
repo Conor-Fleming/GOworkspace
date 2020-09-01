@@ -91,3 +91,11 @@ func foo(x ...int) { // zero or more of type int
 	}
 	fmt.Println("The total is,", sum)
 }
+
+func loopFactorial(fact int) int {
+	total := 1
+	for x := fact; x > 0; x-- {
+		total *= x
+	}
+	return total
+}
