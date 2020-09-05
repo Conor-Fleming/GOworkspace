@@ -17,7 +17,7 @@ func unmarsh() { //unmarshaling a json
 	fmt.Println(s)
 	fmt.Println("into go value00000below")
 	new := []byte(s)
-	var peeps []person
+	peeps := []person{}
 	err := json.Unmarshal(new, &peeps)
 	if err != nil {
 		fmt.Println(err)

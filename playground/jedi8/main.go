@@ -38,4 +38,6 @@ func main() {
 	fmt.Println()
 
 	unmarsh()
+	encoding()
+	sorting()
 }
