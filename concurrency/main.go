@@ -19,6 +19,11 @@ func main() {
 	fmt.Println("CPUs\t", runtime.NumCPU())
 	fmt.Println("Goroutines\t", runtime.NumGoroutine())
 	wg.Wait()
+	ch := make(chan int)
+	go func() {
+		ch <- doSomething(5)
+	}()
+	fmt.Println(<-ch)
 }
 
 func foo() {
@@ -32,4 +37,8 @@ func bar() {
 	for i := 0; i < 10; i++ {
 		fmt.Println("bar:", i)
 	}
+}
+
+func doSomething(x int) int {
+	return x * 5
 }
