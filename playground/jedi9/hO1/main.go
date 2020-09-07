@@ -8,6 +8,7 @@ import (
 var waitG sync.WaitGroup
 
 func main() { // using wait groups to make sure go routines finish
+	fmt.Println("lauching GOroutines!")
 	waitG.Add(3)
 	go go1()
 	go go2()
