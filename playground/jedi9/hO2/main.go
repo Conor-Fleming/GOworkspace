@@ -20,9 +20,11 @@ func main() {
 		first: "Conor",
 		last:  "Fleming",
 	}
-	//saySomething(conor)
-	saySomething(&conor)
+	//saySomething(conor) //demonstrating that you cannot pass in type person if you implement the speak method with a pointer reciever
+	saySomething(&conor) //must pass in the value as a pointer
 
+	//however you could call speak straight from type person and bypass the interface
+	conor.speak()
 }
 
 func saySomething(h human) {
