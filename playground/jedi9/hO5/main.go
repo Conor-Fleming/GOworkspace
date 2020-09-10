@@ -16,7 +16,6 @@ func main() {
 	for i := 0; i < 100; i++ {
 		go func() {
 			atomic.AddInt64(&counter, 1)
-
 			wg.Done()
 		}()
 	}
