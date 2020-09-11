@@ -24,6 +24,6 @@ func main() {
 		cs <- 42
 	}()
 
-	fmt.Println(<-cs) //spits an error, send only channel
+	//fmt.Println(<-cs) //spits an error, send only channel
 
 }
