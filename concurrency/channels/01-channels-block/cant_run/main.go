@@ -7,5 +7,5 @@ func main() {
 
 	c <- 50
 	fmt.Println(<-c)
-	//this will not worl
+	//this will not work
 }
