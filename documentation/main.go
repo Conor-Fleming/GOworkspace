@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Conor-Fleming/GOworkspace/blob/master/documentation/DogPackage"
+	"github.com/Conor-Fleming/GOworkspace/documentation/DogPackage"
 )
 
 func main() {
