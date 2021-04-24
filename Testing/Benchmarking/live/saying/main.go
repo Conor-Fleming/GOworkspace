@@ -1,7 +1,9 @@
 package saying
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func greetings(s string) string {
-	return fmt.Sprint("Welcome, enjoy this greeting")
+	return fmt.Sprint("Welcome, enjoy this greeting", s)
 }
