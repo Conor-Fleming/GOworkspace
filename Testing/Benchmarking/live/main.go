@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/Conor-Fleming/GOworkspace/Testing/Benchmarking/live/saying"
+)
 
 func main() {
-	fmt.Println(saying.greetings("Ciara"))
+	fmt.Println(saying.Greetings("Ciara"))
 }
